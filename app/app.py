@@ -1,5 +1,4 @@
 from recommendation.similarity_model import Similarity_Model
-from recommendation.svd_model import SVD_Model
 import config
 from flask import Flask, request, jsonify
 
@@ -60,10 +59,3 @@ def cosine_item():
     
     return jsonify(response)
 
-
-# @app.route('/predict-rating', methods=['GET'])
-# def predict_rating():
-#     user_id = request.args.get('user_id')
-#     item_id = request.args.get('item_id')
-#     # Add your logic here using the user_id and item_id
-#     return f"<h1>Processed user_id: {user_id}, item_id: {item_id}</h1>"

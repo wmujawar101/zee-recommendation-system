@@ -22,8 +22,8 @@ class Similarity_Model:
         model_name = f'{self.model_type}_similarity_{self.similarity_matrix}'
         
         # Read Model
-        with open(config.MODEL_PATH, 'rb') as f:
-            self.model = pickle.load(f)[model_name]
+        with open(config.MODEL_FILE.format(model_name + '.pkl'), 'rb') as f:
+            self.model = pickle.load(f)
         
         
     

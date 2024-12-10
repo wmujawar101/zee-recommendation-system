@@ -3,8 +3,8 @@ import pickle
 
 class SVD_Model:
     def load_model(self):
-        with open(config.MODEL_PATH, 'rb') as f:
-            self.model = pickle.load(f)['svd_model']
+        with open(config.MODEL_FILE.format('svd_model.pkl'), 'rb') as f:
+            self.model = pickle.load(f)
 
             
     def predict(self, user_id: int, item_id: int) -> float:
