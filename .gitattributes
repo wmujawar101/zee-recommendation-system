@@ -1,1 +1,2 @@
 model/item_similarity_pearson.pkl filter=lfs diff=lfs merge=lfs -text
+model/item_similarity_cosine.pkl filter=lfs diff=lfs merge=lfs -text
